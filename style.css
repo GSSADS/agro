@@ -1,0 +1,484 @@
+* {
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: white;
+}
+.imagem {
+   width: 400px; 
+   height:auto;
+}
+.conteudo {
+   width: 90%;
+   margin: auto;
+}
+
+header {
+   width: 100%;
+   float: left;
+   height: 250px;
+   display: flex;
+}
+
+nav {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.logo img {
+   width: 200px;
+   margin-left: 30px;
+}
+
+nav ul {
+   display: flex;
+   list-style: none;
+}
+nav ul li {
+   position: relative;
+}
+
+nav li ul li {
+   display: none;
+}
+nav ul li ul {
+   position: absolute;
+   top: 100%; 
+   left: 0;
+   display: none;
+   
+}
+
+nav ul li:hover ul {
+   display: block;
+}
+
+nav ul li ul li {
+   display: block;
+   padding: 4%;
+   font-size: 1.0em;
+}
+
+nav li {
+   width: 100%;
+   float: left;
+   padding: 4%;
+   font-size: 1.8em;
+   position: relative;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+}
+
+a:hover {
+   background-color: rgb(9, 243, 9);
+   border-radius: 30px;
+}
+
+.banner {
+   width: 100%;
+   height: auto;
+   text-align: center;
+   margin-top: 0;
+}
+.mapa {
+   display: block;  
+   width: 100%;
+}
+figcaption{
+   font-weight: bold;
+   padding: 5px;
+}
+.column{
+   text-align: justify;
+   font-size: 16px;
+   line-height: 1.5;
+}
+.column p {
+   text-align: justify; 
+   margin-bottom: 10px;
+   font-size: 16px; 
+   line-height: 1.5; 
+}
+.whatsapp-float {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background-color: #25d366;
+   padding: 10px;
+   border-radius: 10%;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   align-items: center;
+   transition: opacity 0.3s, transform 0.3s;
+   opacity: 1;
+   transform: translateY(0);
+}
+
+.whatsapp-float a {
+   text-decoration: none;
+   color: #fff;
+   display: flex;
+   align-items: center;
+}
+
+.whatsapp-float img {
+   width: 50px;
+   height: 50px;
+   margin-right: 10px;
+}
+.column h2 {
+   font-size: 24px; 
+   margin-bottom: 5px; 
+   text-align: left;
+   border-bottom: 1px solid black;
+   margin-top: 5px;
+}
+.column h4{
+  font-size: 1.6em;
+   margin-bottom: 5px; 
+   text-align: left;
+   margin-top: 5px;
+   font-weight: bold;
+}
+.report {
+   background-color: #fff;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   flex-grow: 1; 
+ }
+ .report p.preformatted {
+   font-size: 1.0rem;
+   font-weight: lighter;
+ }
+.banner img {
+   width: 100%;
+   height: auto;
+   margin: auto;
+}
+
+section {
+   width: 100%;
+   float: left;
+   padding: 2%;
+   margin: auto;
+}
+h1 {
+   text-align: center;
+   margin-top: 5%;
+}
+
+table {
+   width: 100%;
+   margin: auto;
+   border-collapse: collapse;
+}
+.parce {
+   width: 100px;
+   height: auto;
+   margin: auto;
+   margin-top: 10%;
+}
+
+td {
+   text-align: center;
+   margin-top: 10%;
+}
+
+h3 {
+   text-align: center;
+   font-weight: bold;
+   background-color: rgb(79, 223, 79);
+   border-radius: 20px;
+   margin-top: 5%;
+}
+   h4{
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+   }
+.menu-icon{
+   display: none;
+}
+nav.show {
+   display: block;
+}
+.eventos-section ul{
+   list-style: none;
+
+}
+.imagem-lateral iframe {
+   width: 100%;
+   height: 300px;
+}
+.container.imagem-container {
+   text-align: center;
+}
+
+.footer {
+   text-align: center;
+   margin-top: 20px;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+   header {
+      height: auto;
+  }
+  .logo img {
+      margin-left: 10px;
+  }
+
+  .menu-icon {
+      margin-right: 10px;
+  }
+   .contato-section {
+      flex-direction: column;
+  }
+
+  .formulario,
+  .imagem-lateral {
+      width: 100%;
+      display: block;
+  }
+   .nav-active {
+      display: block;
+      right: 0;
+  }
+  .texto-sobreposto {
+   font-size: 12px; 
+ }
+   .conteudo {
+      width: 100%;
+  }
+  .menu-icon {
+      display: block;
+      text-align: right;
+      font-size: 2em;
+      padding: .9rem;
+      flex: 1;
+      background: none;
+      border: none;
+      color: black;
+
+  }
+
+
+  nav.active {
+      display: block;
+   
+  }
+
+  nav {
+   display: none;
+   width: 80%;
+   position: fixed;
+   top: 50%;
+   right: -80%; 
+   transform: translate(0, -50%);
+   background-color: rgba(240, 240, 240, 0.80);
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+   z-index: 1;
+   transition: right 0.3s ease;
+}
+nav.active {
+   right: 10%;
+}
+  nav ul {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   margin-top: 0;
+   font-size: 12px;
+   padding: 0;
+  }
+
+  nav ul li ul {
+      display: none;
+  }
+  nav a{
+   color: black;
+   font-weight: bold;
+  }
+
+  nav ul li:hover ul {
+      display: block;
+  }
+   .menu li {
+       display: none;
+   }
+
+   img {
+      max-width: 100%;
+      height: auto;
+   }
+   .column img {
+      
+      max-width: 100%; 
+  }
+
+   .logo {
+       text-align: center;
+   }
+
+   .logo img {
+      margin: 0 auto;
+      display: block;
+   }
+
+   table {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  table td {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: auto;
+  }
+
+  .parce {
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+      padding: 5%;
+  }
+
+  .par {
+      width: 70%;
+      margin: 0 auto;
+      display: block;
+      padding: 5%;
+  }
+}
+
+footer {
+   width: 90%;
+   float: left;
+   height: 128px;
+   margin-top: 100px;
+}
+
+
+p {
+   font-size: 1.0rem;
+   color: black;
+   font-weight: bold;
+   text-align: center;
+}
+.container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.column {
+   background-color: #f0f0f0;
+   padding: 20px;
+   text-align: center;
+}
+.column img {
+   float: right;
+   margin-left: 10px;
+   
+}
+.container.imagem-container {
+   display: flex;
+   justify-content: center;
+   width: 200px;
+   margin: auto;
+   
+   
+}
+
+pre {
+   text-align: center;
+}
+
+.bottom-text {
+   margin: 20px 0;
+   text-align: center;
+}
+.contato-section {
+   display: flex;
+}
+
+.imagem-lateral {
+   flex: 1;
+}
+
+.formulario {
+   flex: 1;
+   padding: 20px;
+}
+
+.imagem-lateral img {
+   width: 100%;
+   height: auto;
+}
+.formulario {
+   flex: 1;
+   padding: 20px;
+   background-color: #f4f4f4;
+   border-radius: 8px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+   color: #333;
+}
+
+.formulario label {
+   display: block;
+   margin: 10px 0;
+   color: #555;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+   width: 100%;
+   padding: 8px;
+   margin: 6px 0;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.formulario button {
+   background-color: #4caf50;
+   color: white;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.formulario button:hover {
+   background-color: #45a049;
+}
+
+.imagem-lateral {
+   flex: 1;
+   text-align: center;
+}
+
+.imagem-lateral img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+}
+
