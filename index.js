@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var btnEnviar = document.getElementById("enviarFormulario");
 
     if (btnEnviar) {
-        btnEnviar.addEventListener("click", zap);
+        btnEnviar.addEventListener();
     }
 });
 
