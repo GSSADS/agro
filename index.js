@@ -57,7 +57,7 @@ function zap() {
                 "%0A**Telefone:** " + telefone +
                 "%0A**Tipo de Interesse:** " + tipoInteresse2;
 
-    window.open("https://api.whatsapp.com/send?phone=556699292159&text=" + texto, "_blank");
+    window.open("https://api.whatsapp.com/send?phone=&text=" + texto, "_blank");
 }
 
 
